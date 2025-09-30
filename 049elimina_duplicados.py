@@ -6,4 +6,5 @@ listaSinDuplicados = []
 for num in miLista:
     if num not in listaSinDuplicados:
         listaSinDuplicados.append(num)
+        
 print(f"Esta es la lista original -> {miLista} y esta seria la que no tiene duplicados -> {listaSinDuplicados}")
