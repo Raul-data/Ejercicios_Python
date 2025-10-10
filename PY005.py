@@ -3,14 +3,13 @@
 palabras = ["sol", "luna", "mar", "estrella", "cielo"] 
 nuevas_palabras = []
 letra_usuario = input("Dime una letra para darte las palabras que salen en la lista con esa letra: ")
-for i in palabras:
-    for j in i:
-        if j == letra_usuario[0]:
-            nuevas_palabras.append(i)
-print(nuevas_palabras)
-tys
-,delattr
 
+for palabra in palabras:
+    if palabra[0] == letra_usuario:
+        nuevas_palabras.append(palabra)
 
-
-VOlver a mirar
+# Verificar después del bucle si se encontraron palabras
+if nuevas_palabras:  # Si la lista no está vacía
+    print(nuevas_palabras)
+else:
+    print("La letra no coincide con ninguna palabra")
