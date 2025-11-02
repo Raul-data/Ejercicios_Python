@@ -1,5 +1,8 @@
-n = 5
+n = int(input("De cuanto quieres el triangulo: "))
+simbolo = input("que simbolo quieres")
+
+
 for i in range(0,n + 1):
     for j in range(i):
-        print("@", end=" ")
+        print(simbolo, end=" ")
     print()

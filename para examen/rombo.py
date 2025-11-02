@@ -1,4 +1,4 @@
-n = 5
+n = int(input("Dime de cuanto quires el rombo: "))
 
 # Parte superior (incluye la fila central)
 i = 0

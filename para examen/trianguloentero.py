@@ -1,4 +1,5 @@
-n = 5
+n = int(input("De cuanto quieres el triangulo: "))
+
 for i in range(n + 1):
     j = 1
     while j <= n - i:
