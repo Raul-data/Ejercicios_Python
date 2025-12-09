@@ -1,15 +1,26 @@
 #Pide una frase al usuario y crea un diccionario donde las claves sean palabras y los valores el número de veces que aparece cada una.
 
-frase_usuario = input("Dime una frase usuario: ")
-
-palabras = frase_usuario.split()
+frase = input("Introduce una frase: ")
 
 frecuencia = {}
 
-for palabra in palabras:
+palabra = ""
+
+for char in frase:
+    if char != " ":
+        palabra += char
+    else:
+        if palabra != "":
+            if palabra in frecuencia:
+                frecuencia[palabra] += 1
+            else:
+                frecuencia[palabra] = 1
+        palabra = ""
+        
+if palabra != "":
     if palabra in frecuencia:
         frecuencia[palabra] += 1
     else:
         frecuencia[palabra] = 1
         
-print(f"frecuencia de palabras {frecuencia}")
+print(frecuencia)
